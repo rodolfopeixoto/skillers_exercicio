@@ -1,5 +1,6 @@
-def typing
-  questions = ["Qual é a capital do Japão?","Qual é a capital do Brasil?"]
-  puts questions
-  gets.chomp
+def typing(questions)
+  question = questions.sample
+  puts question
+  answer = gets.chomp
+  [answer, question]
 end
